@@ -8,7 +8,7 @@ CREATE TABLE Books_Tbl(BookId INT PRIMARY KEY, BookName VARCHAR(30), AuthID int,
 
 ALTER TABLE Books_Tbl ADD CONSTRAINT Fk_Books_Author FOREIGN KEY (AuthID) references Author_Tbl(AuthId);
 
-INSERT INTO Author_Tbl (AuthId, AuthName, AuthCountry) values (101, 'Mansi', 'India'), (102, 'Mishika', 'India'), (103, 'Itika', 'America');
+INSERT INTO Author_Tbl (AuthId, AuthName, AuthCountry) values (101, 'Punit', 'India'), (102, 'Abhinav', 'India'), (103, 'Itika', 'America');
 
 SELECT * FROM Author_Tbl;
 
@@ -70,8 +70,8 @@ ON D.DeptId = C.DeptId
 GROUP BY D.DeptName
 HAVING COUNT(C.DeptId) > 2;
 
-create login mansi with password = 'mansi';
+create login PUNIT with password = 'PUNIT1234';
 
-CREATE USER Mansi;
+CREATE USER PUNIT;
 
-GRANT SELECT ON COURSES TO MANSI; 
+GRANT SELECT ON COURSES TO PUNIT; 
