@@ -121,6 +121,8 @@ CREATE DATABASE EXP3_SUB_QUERIES;
 
 USE EXP3_SUB_QUERIES;
 
+-- EASY
+
 CREATE TABLE TBL_EMPLOYEE (
 	EMP_ID INT
 );
@@ -229,7 +231,7 @@ select name, id from b;
 */
 
 
--- Medium
+-------------------------- Medium --------------------------------
 CREATE TABLE department (
     id INT PRIMARY KEY,
     dept_name VARCHAR(50)
