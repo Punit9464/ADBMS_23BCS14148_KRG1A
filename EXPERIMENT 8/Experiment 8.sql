@@ -211,5 +211,7 @@ BEGIN
     END;
 
     INSERT INTO students(name, age, class) VALUES ('Sita', 17, 10);
+
+    COMMIT;
 END;
 $$;
